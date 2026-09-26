@@ -5333,3 +5333,828 @@ Thank you.`;
 }
 
 </script>
+<!-- =========================================
+     PART 7 — FOOTER + FINAL JAVASCRIPT
+========================================= -->
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    GE
+                </div>
+
+                <h3>
+                    Global Enterprises
+                </h3>
+
+                <p>
+                    Practical industrial solutions for
+                    fabrication, machine job work,
+                    tools and custom requirements.
+                </p>
+
+                <a
+                    href="https://wa.me/917048993368"
+                    target="_blank"
+                    class="footer-whatsapp"
+                >
+                    Chat on WhatsApp ↗
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    SERVICES
+                </span>
+
+                <a href="#services">
+                    PUC Machine &amp; Probes
+                </a>
+
+                <a href="#services">
+                    Sheet Metal Fabrication
+                </a>
+
+                <a href="#services">
+                    Bending &amp; Cutting
+                </a>
+
+                <a href="#services">
+                    Lathe Machine Job Works
+                </a>
+
+                <a href="#services">
+                    Hand Tools Making
+                </a>
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div class="footer-column">
+
+                <span class="footer-heading">
+                    COMPANY
+                </span>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#services">
+                    Our Services
+                </a>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column footer-contact">
+
+                <span class="footer-heading">
+                    CONTACT
+                </span>
+
+                <a href="tel:7048993368">
+                    +91 70489 93368
+                </a>
+
+                <a
+                    href="mailto:globalenterprises05122021@gmail.com"
+                >
+                    globalenterprises05122021@gmail.com
+                </a>
+
+                <span>
+                    9/5 Street No. 15,
+                    Brahmpur, Delhi – 110053
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span>
+                Global Enterprises.
+                All Rights Reserved.
+            </span>
+
+            <span>
+                Industrial &amp; Engineering Solutions
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     FLOATING WHATSAPP BUTTON
+========================================= -->
+
+<a
+    href="https://wa.me/917048993368"
+    target="_blank"
+    class="floating-whatsapp"
+    aria-label="Chat on WhatsApp"
+>
+
+    <span class="wa-symbol">
+        WA
+    </span>
+
+    <span class="wa-text">
+        WhatsApp Us
+    </span>
+
+</a>
+
+
+<!-- =========================================
+     BACK TO TOP
+========================================= -->
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top"
+>
+    ↑
+</button>
+
+
+<!-- =========================================
+     PART 7 STYLES
+========================================= -->
+
+<style>
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer{
+    background:#20211f;
+
+    color:#ffffff;
+
+    padding:70px 0 0;
+}
+
+
+.footer-main{
+
+    display:grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.3fr;
+
+    gap:45px;
+
+    padding-bottom:55px;
+}
+
+
+/* ---------- FOOTER BRAND ---------- */
+
+.footer-logo{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #565751;
+    border-radius:8px;
+
+    color:#ffffff;
+
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+
+.footer-brand h3{
+
+    margin-top:17px;
+
+    font-size:22px;
+
+    letter-spacing:-.7px;
+}
+
+
+.footer-brand p{
+
+    max-width:300px;
+
+    margin-top:12px;
+
+    color:#a7a8a2;
+
+    font-size:11px;
+
+    line-height:1.8;
+}
+
+
+.footer-whatsapp{
+
+    display:inline-flex;
+
+    margin-top:20px;
+
+    padding:11px 15px;
+
+    border:1px solid #555650;
+    border-radius:6px;
+
+    color:#ffffff;
+
+    font-size:9px;
+    font-weight:800;
+
+    transition:.2s;
+}
+
+
+.footer-whatsapp:hover{
+
+    background:#ffffff;
+
+    color:#20211f;
+
+}
+
+
+/* ---------- FOOTER COLUMNS ---------- */
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+}
+
+
+.footer-heading{
+
+    margin-bottom:18px;
+
+    color:#858680;
+
+    font-size:8px;
+    font-weight:900;
+
+    letter-spacing:1.8px;
+}
+
+
+.footer-column a,
+.footer-column > span:not(.footer-heading){
+
+    margin-bottom:11px;
+
+    color:#b7b8b2;
+
+    font-size:10px;
+
+    line-height:1.6;
+
+    transition:.2s;
+}
+
+
+.footer-column a:hover{
+
+    color:#ffffff;
+
+    transform:translateX(3px);
+
+}
+
+
+.footer-contact a{
+
+    word-break:break-word;
+}
+
+
+/* ---------- FOOTER BOTTOM ---------- */
+
+.footer-bottom{
+
+    min-height:65px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+
+    border-top:1px solid #3a3b38;
+
+    color:#777872;
+
+    font-size:8px;
+}
+
+
+/* =========================================
+   FLOATING WHATSAPP
+========================================= */
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 14px 10px 10px;
+
+    border-radius:30px;
+
+    background:#222320;
+
+    color:#ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.18);
+
+    font-size:9px;
+    font-weight:800;
+
+    transition:.25s;
+}
+
+
+.floating-whatsapp:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+.wa-symbol{
+
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#222320;
+
+    font-size:7px;
+    font-weight:900;
+}
+
+
+.wa-text{
+
+    white-space:nowrap;
+}
+
+
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+.back-to-top{
+
+    position:fixed;
+
+    right:20px;
+    bottom:76px;
+
+    z-index:9998;
+
+    width:35px;
+    height:35px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #d4d4cf;
+    border-radius:50%;
+
+    background:#ffffff;
+    color:#222320;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(10px);
+
+    transition:.25s;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.08);
+}
+
+
+.back-to-top.show{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:900px){
+
+    .footer-main{
+
+        grid-template-columns:
+            1.3fr
+            1fr
+            1fr;
+
+        gap:35px;
+
+    }
+
+    .footer-brand{
+
+        grid-column:1 / -1;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .site-footer{
+
+        padding-top:55px;
+
+    }
+
+
+    .footer-main{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+        padding-bottom:35px;
+
+    }
+
+
+    .footer-brand{
+
+        grid-column:auto;
+
+    }
+
+
+    .footer-brand h3{
+
+        font-size:20px;
+
+    }
+
+
+    .footer-column{
+
+        border-top:1px solid #363733;
+
+        padding-top:24px;
+
+    }
+
+
+    .footer-heading{
+
+        margin-bottom:14px;
+
+    }
+
+
+    .footer-column a,
+    .footer-column > span:not(.footer-heading){
+
+        font-size:10px;
+
+    }
+
+
+    .footer-bottom{
+
+        min-height:85px;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        justify-content:center;
+
+        gap:7px;
+
+        padding:15px 0;
+
+        line-height:1.6;
+
+    }
+
+
+    .floating-whatsapp{
+
+        right:14px;
+
+        bottom:14px;
+
+        padding:8px 11px 8px 8px;
+
+    }
+
+
+    .back-to-top{
+
+        right:14px;
+
+        bottom:65px;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media(max-width:360px){
+
+    .wa-text{
+
+        display:none;
+
+    }
+
+
+    .floating-whatsapp{
+
+        width:43px;
+        height:43px;
+
+        padding:0;
+
+        justify-content:center;
+
+    }
+
+
+    .wa-symbol{
+
+        width:32px;
+        height:32px;
+
+    }
+
+}
+
+</style>
+
+
+<!-- =========================================
+     FINAL JAVASCRIPT
+========================================= -->
+
+<script>
+
+/* =========================================
+   CURRENT YEAR
+========================================= */
+
+const yearElement =
+    document.getElementById("currentYear");
+
+if(yearElement){
+
+    yearElement.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+const backToTop =
+    document.getElementById("backToTop");
+
+
+if(backToTop){
+
+    window.addEventListener("scroll", function(){
+
+        if(window.scrollY > 500){
+
+            backToTop.classList.add("show");
+
+        }else{
+
+            backToTop.classList.remove("show");
+
+        }
+
+    });
+
+
+    backToTop.addEventListener("click", function(){
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
+
+
+/* =========================================
+   SMOOTH NAVIGATION
+========================================= */
+
+document.querySelectorAll(
+    'a[href^="#"]'
+).forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(event){
+
+            const targetId =
+                this.getAttribute("href");
+
+            if(
+                targetId &&
+                targetId !== "#"
+            ){
+
+                const target =
+                    document.querySelector(targetId);
+
+                if(target){
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+
+                        behavior:"smooth",
+
+                        block:"start"
+
+                    });
+
+                }
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =========================================
+   MOBILE MENU CLOSE
+========================================= */
+
+const finalMobileNav =
+    document.getElementById("mobileNav");
+
+
+document.querySelectorAll(
+    ".mobile-nav a"
+).forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            if(finalMobileNav){
+
+                finalMobileNav.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =========================================
+   ESCAPE KEY CLOSE MENU
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+
+            if(finalMobileNav){
+
+                finalMobileNav.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+
+    }
+);
+
+</script>
+
+
+<!-- =========================================
+     END OF WEBSITE
+========================================= -->
+
+</main>
+
+</body>
+</html>
