@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Global Enterprises | Industrial Tools & Engineering Services</title>
+
+<meta name="description" content="Global Enterprises provides PUC Machine and Probes, Sheet Metal Fabrication, Bending and Cutting, Lathe Machine Job Works and Hand Tools Making in Delhi.">
+
+<meta name="theme-color" content="#f7f7f5">
+
+<style>
+
+/* ================================
+   GLOBAL ENTERPRISES
+   PART 1 — BASE + HEADER
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background:#f8f8f6;
+    color:#171717;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button,
+input,
+textarea{
+    font-family:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* ---------- TOP BAR ---------- */
+
+.top-bar{
+    background:#20211f;
+    color:#ffffff;
+    font-size:12px;
+    padding:9px 0;
+}
+
+.top-bar-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.top-left{
+    opacity:.86;
+}
+
+.top-right{
+    display:flex;
+    gap:18px;
+}
+
+.top-right a{
+    opacity:.9;
+    transition:.2s;
+}
+
+.top-right a:hover{
+    opacity:1;
+}
+
+/* ---------- HEADER ---------- */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(248,248,246,.96);
+    border-bottom:1px solid #e5e5e1;
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+.navbar{
+    min-height:76px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+/* ---------- LOGO ---------- */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:max-content;
+}
+
+.logo-mark{
+    width:42px;
+    height:42px;
+
+    border:1.5px solid #252624;
+    border-radius:9px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:15px;
+    font-weight:800;
+    letter-spacing:-1px;
+
+    background:#ffffff;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.05;
+}
+
+.logo-name{
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:-.4px;
+}
+
+.logo-sub{
+    margin-top:5px;
+    font-size:9px;
+    letter-spacing:1.5px;
+    color:#777872;
+    text-transform:uppercase;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-links a{
+    position:relative;
+
+    font-size:13px;
+    font-weight:600;
+    color:#3e403c;
+
+    padding:8px 0;
+
+    transition:.25s;
+}
+
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:1px;
+
+    width:0;
+    height:1.5px;
+
+    background:#222320;
+
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:#111;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* ---------- HEADER ACTION ---------- */
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.call-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    padding:11px 16px;
+
+    background:#222320;
+    color:#ffffff;
+
+    border-radius:7px;
+
+    font-size:12px;
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.call-btn:hover{
+    background:#3b3c39;
+    transform:translateY(-1px);
+}
+
+/* ---------- MOBILE MENU BUTTON ---------- */
+
+.menu-btn{
+    width:42px;
+    height:42px;
+
+    display:none;
+
+    align-items:center;
+    justify-content:center;
+
+    background:#ffffff;
+    border:1px solid #deded9;
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.menu-icon{
+    width:19px;
+    height:14px;
+
+    position:relative;
+}
+
+.menu-icon span{
+    position:absolute;
+    left:0;
+
+    width:100%;
+    height:1.5px;
+
+    background:#222320;
+
+    transition:.25s;
+}
+
+.menu-icon span:nth-child(1){
+    top:0;
+}
+
+.menu-icon span:nth-child(2){
+    top:6px;
+}
+
+.menu-icon span:nth-child(3){
+    top:12px;
+}
+
+/* ---------- MOBILE NAV ---------- */
+
+.mobile-nav{
+    display:none;
+
+    background:#f8f8f6;
+    border-top:1px solid #e7e7e3;
+    border-bottom:1px solid #e2e2de;
+}
+
+.mobile-nav.active{
+    display:block;
+}
+
+.mobile-nav a{
+    display:block;
+
+    padding:15px 4%;
+
+    font-size:14px;
+    font-weight:600;
+
+    border-bottom:1px solid #e7e7e3;
+}
+
+.mobile-nav a:last-child{
+    border-bottom:0;
+}
+
+.mobile-call{
+    margin:15px 4%;
+
+    display:flex;
+    justify-content:center;
+
+    padding:13px;
+
+    border-radius:7px;
+
+    background:#222320;
+    color:#ffffff;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+/* ---------- COMMON SECTION ---------- */
+
+section{
+    position:relative;
+}
+
+.section-label{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin-bottom:12px;
+
+    color:#777872;
+
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+}
+
+.section-label::before{
+    content:"";
+    width:22px;
+    height:1px;
+    background:#777872;
+}
+
+.section-title{
+    font-size:clamp(28px,4vw,44px);
+    line-height:1.12;
+    letter-spacing:-1.5px;
+    font-weight:800;
+}
+
+.section-text{
+    margin-top:15px;
+    max-width:650px;
+
+    color:#686a64;
+    font-size:15px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.primary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+
+    min-height:48px;
+    padding:0 21px;
+
+    border-radius:7px;
+
+    background:#222320;
+    color:#ffffff;
+
+    font-size:13px;
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.primary-btn:hover{
+    background:#3b3c39;
+    transform:translateY(-2px);
+}
+
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:48px;
+    padding:0 21px;
+
+    border:1px solid #d8d8d3;
+    border-radius:7px;
+
+    background:#ffffff;
+    color:#222320;
+
+    font-size:13px;
+    font-weight:700;
+
+    transition:.25s;
+}
+
+.secondary-btn:hover{
+    border-color:#a9aaa4;
+    background:#f1f1ee;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:850px){
+
+    .top-bar{
+        display:none;
+    }
+
+    .navbar{
+        min-height:68px;
+    }
+
+    .nav-links,
+    .header-actions .call-btn{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+    }
+
+    .logo-mark{
+        width:39px;
+        height:39px;
+    }
+
+    .logo-name{
+        font-size:16px;
+    }
+
+    .logo-sub{
+        font-size:8px;
+        letter-spacing:1.2px;
+    }
+
+    .container{
+        width:91%;
+    }
+}
+
+@media(max-width:420px){
+
+    .navbar{
+        gap:10px;
+    }
+
+    .logo{
+        gap:9px;
+    }
+
+    .logo-mark{
+        width:36px;
+        height:36px;
+        border-radius:8px;
+        font-size:13px;
+    }
+
+    .logo-name{
+        font-size:15px;
+    }
+
+    .logo-sub{
+        font-size:7px;
+    }
+
+    .menu-btn{
+        width:39px;
+        height:39px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =================================
+     TOP BAR
+================================= -->
+
+<div class="top-bar">
+    <div class="container top-bar-inner">
+
+        <div class="top-left">
+            Precision • Fabrication • Engineering
+        </div>
+
+        <div class="top-right">
+            <a href="tel:7048993368">Call: 7048993368</a>
+            <a href="mailto:globalenterprises05122021@gmail.com">
+                Email Us
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+
+            <div class="logo-mark">
+                GE
+            </div>
+
+            <div class="logo-text">
+
+                <span class="logo-name">
+                    Global Enterprises
+                </span>
+
+                <span class="logo-sub">
+                    Industrial Solutions
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#about">About Us</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+
+        <!-- HEADER ACTION -->
+        <div class="header-actions">
+
+            <a
+                href="tel:7048993368"
+                class="call-btn"
+            >
+                ☎ Call Us
+            </a>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu"
+            >
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="#home">Home</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#contact">Contact</a>
+
+        <a
+            href="https://wa.me/917048993368"
+            class="mobile-call"
+        >
+            WhatsApp Enquiry
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =================================
+     PART 2 WILL START BELOW THIS
+================================= -->
